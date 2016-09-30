@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<input type="button" onclick="mySubmit('1')" value="提交1">
+<hr>
+<input type="button" onclick="mySubmit('2')" value="提交2">
+
+<script type="text/javascript">
+
+function mySubmit(id){
+	window.location.href= "localhost:9999/token/test" + id + "?clientToken=$token";
+}
+
+</script>
+
+</body>
+</html>
